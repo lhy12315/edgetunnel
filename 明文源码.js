@@ -1,8 +1,8 @@
 
 import { connect } from 'cloudflare:sockets';
 
-let userID = '';
-let proxyIP = '';
+let userID = '9f5dbf1f-76bb-4da9-9f3a-cd08e437c634';
+let proxyIP = 'ProxyIP.JP.fxxk.dedyn.io';
 let sub = '';
 let subConverter = 'SUBAPI.fxxk.dedyn.io';
 let subConfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini";
@@ -1288,7 +1288,7 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, env
 	
 				return randomIP.join('.');
 			}
-			addresses = addresses.concat('127.0.0.1:1234#CFnat');
+			addresses = addresses.concat('192.168.2.249:1234#CFnat');
 			if (hostName.includes(".workers.dev")) {
 				addressesnotls = addressesnotls.concat(cfips.map(cidr => generateRandomIPFromCIDR(cidr) + '#CF随机节点'));
 			} else {
